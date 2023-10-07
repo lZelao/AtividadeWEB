@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 // Rota para a página inicial
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+  res.render('/public/index.html');
 });
 
 // Inicia o servidor na porta especificada
